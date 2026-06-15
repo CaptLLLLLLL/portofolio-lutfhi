@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lutfhi Jaya Rizaldi | Portfolio</title>
+
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body class="bg-neutral-900">
+    <div class="flex-col justify-center items-center w-full">
+        <div
+            class="relative overflow-hidden text-white bg-neutral-800 flex flex-col w-full rounded-none sm:rounded-xl h-screen scale-100 sm:scale-90 transition-all duration-500"
+        >
+
+            <!-- Header -->
+            <header class="w-full h-15 flex items-center justify-between px-6 lg:px-16 relative mt-3 z-10">
+                <div class="flex items-center gap-8">
+
+                    <!-- Hamburger -->
+                    <button id="menuBtn" class="hamburger">
+                        <span class="bar top"></span>
+                        <span class="bar middle"></span>
+                        <span class="bar bottom"></span>
+                    </button>
+
+                    <!-- Navbar -->
+                    <nav
+                        id="navMenu"
+                        class="
+                        fixed sm:static inset-0 sm:inset-auto
+                        z-40 sm:z-auto
+
+                        bg-neutral-900/95 sm:bg-transparent
+                        backdrop-blur-2xl sm:backdrop-blur-0
+
+                        flex flex-col sm:flex-row
+                        items-start sm:items-center
+                        justify-center sm:justify-start
+
+                        gap-6 sm:gap-8
+                        px-10 sm:px-0
+
+                        opacity-0 -translate-x-full sm:-translate-x-5
+                        pointer-events-none
+                        transition-all duration-500
+
+                        font-semibold
+                        "
+                    >
+                        <div class="flex items-center justify-between mb-12 w-full sm:hidden">
+    
+                            <p class="text-[#22C8FF] text-sm tracking-[0.4em] font-semibold mt-7">
+                                MENU
+                            </p>
+
+                            <button id="closeMenu"
+                                class="w-12 h-12 rounded-full mt-7
+                                border border-white/10
+                                bg-white/5
+                                backdrop-blur-xl
+                                flex items-center justify-center
+                                hover:border-[#22C8FF]/40
+                                hover:bg-[#22C8FF]/10
+                                transition-all duration-300">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="w-7"
+                                    viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none"/>
+                                    <path fill="#fff"
+                                        d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/>
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                        <button class="nav-link" data-section="heroSection">Home</button>
+                        <button class="nav-link" data-section="aboutSection">About</button>
+                        <button class="nav-link" data-section="projectSection">Project</button>
+                        <button class="nav-link" data-section="experienceSection">Experience</button>
+                        <button class="nav-link" data-section="contactSection">Contact</button>
+
+                        <div class="mt-auto pt-10 border-t w-full flex flex-col border-white/10 sm:hidden">
+
+                            <p class="font-bold">
+                                LUTFHI JAYA RIZALDI
+                            </p>
+
+                            <p class="text-white/50 text-sm mb-7">
+                                UI/UX Designer
+                            </p>
+
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- Logo -->
+                <img
+                    id="logo"
+                    src="./src/img/Lv2.png"
+                    alt="Lutfhi logo"
+                    class="w-8 absolute left-1/2 -translate-x-1/2 transition-all duration-500 cursor-pointer"
+                >
+            </header>
+
+            <!-- Background -->
+            <div class="absolute inset-0 flex flex-col justify-evenly overflow-hidden pointer-events-none select-none">
+                <h1 class="
+                    text-[70vw]
+                    md:text-[20vw]
+                    font-bold
+                    italic
+                    leading-none
+                    whitespace-nowrap
+                    text-transparent -z-10
+                    [-webkit-text-stroke:1px_rgba(255,255,255,0.08)]
+                    animate-[float_8s_ease-in-out_infinite]
+                ">
+                    LUTFHI&nbsp;LUTFHI&nbsp;
+                </h1>
+
+                <h1 class="
+                    text-[70vw]
+                    md:text-[20vw]
+                    font-bold
+                    italic
+                    leading-none
+                    whitespace-nowrap
+                    text-white/3 -z-10
+                    animate-[floatReverse_10s_ease-in-out_infinite]
+                ">
+                    LUTFHI&nbsp;LUTFHI&nbsp;
+                </h1>
+
+                <h1 class="
+                    text-[70vw]
+                    md:text-[20vw]
+                    font-bold
+                    italic
+                    leading-none
+                    whitespace-nowrap
+                    text-transparent -z-10
+                    [-webkit-text-stroke:1px_rgba(255,255,255,0.08)]
+                    animate-[float_12s_ease-in-out_infinite]
+                ">
+                    LUTFHI&nbsp;LUTFHI&nbsp;
+                </h1>
+            </div>
+
+            <!-- Side Dot Navigation -->
+            <div
+                class="fixed right-8 md:right-12 top-1/2 -translate-y-1/2 z-50 flex-col gap-3 visibility-hidden md:visibility-visible opacity-0 md:opacity-100 transition-all duration-500 pointer-events-none md:pointer-events-auto flex"
+            >
+                <button class="nav-dot active-dot" data-section="heroSection"></button>
+                <button class="nav-dot" data-section="aboutSection"></button>
+                <button class="nav-dot" data-section="projectSection"></button>
+                <button class="nav-dot" data-section="experienceSection"></button>
+                <button class="nav-dot" data-section="contactSection"></button>
+            </div>
+
+            <!-- Main Content -->
+            <main class="relative flex-1 overflow-hidden">
+                <section
+                    id="heroSection"
+                    class="section w-full px-[clamp(1.5rem,5vw,4rem)] flex items-center flex-col sm:flex-row h-full"
+                >
+                    <div class="w-full sm:w-1/2 h-full flex flex-col items-start justify-center mb-5 sm:mb-0">
+                        <p class="text-sm font-light md:text-xl">Web Portfolio</p>
+                        <div class="animated-line w-full h-0.5 mb-1 mt-1 rounded-full"></div>
+                        <p class="text-2xl font-bold md:text-3xl lg:text-5xl">LUTFHI JAYA</p>
+                        <p class="text-2xl md:text-3xl lg:text-5xl font-bold flex-col">
+                            RIZALDI
+                            <span class="w-2 h-2 lg:w-4 lg:h-4 bg-red-600 relative inline-flex"></span>
+                        </p>
+                        <p class="font-medium text-[10px] lg:text-xl mb-5">
+                            UI/UX Designer | Web & Mobile Design Interface
+                        </p>
+                        <p class="font-medium lg:font-normal text-[10px] lg:text-[15px]">
+                            I am a UI/UX Designer focused on creating clean, functional, and user-friendly web and CMS
+                            interfaces. I enjoy exploring design ideas, building prototypes in Figma, and collaborating
+                            with teams to deliver effective digital solutions.
+                        </p>
+
+                    </div>
+
+                    <div class="w-full sm:w-1/2 h-full items-start sm:items-center flex justify-between">
+                        <div class="flex-1 flex justify-center">
+                            <img
+                                src="./src/img/gwehj.png"
+                                alt="Lutfhi Jaya Rizaldi"
+                                class="w-50 lg:w-100 md:w-70 transition-all duration-500 ease-in-out"
+                            >
+                        </div>
+                    </div>
+                </section>
+
+                <section id="aboutSection" class="section">
+                    <div class="w-full h-full px-[clamp(1.5rem,5vw,4rem)] flex sm:flex-row flex-col items-center">
+                        <div class="w-full sm:w-1/2 h-full flex flex-col items-start justify-center">
+                            <p class="text-lg font-bold mb-1 sm:mb-3">About Me</p>
+                            <p class="font-black text-xl lg:text-3xl">LUTFHI JAYA RIZALDI</p>
+                            <p class="font-light text-[10px] mb-5 lg:text-[15px]">
+                                UI/UX Designer | Web & Mobile Design Interface
+                            </p>
+                            <p class="font-medium text-[10px] lg:text-[15px] mb-5">
+                                I am a UI/UX Designer focused on creating clean, functional, and user-friendly web and
+                                CMS interfaces. I enjoy exploring design ideas, building prototypes in Figma, and
+                                collaborating with teams to deliver effective digital solutions.
+                            </p>
+
+                            <div class="bg-white/20 w-fit h-auto flex flex-row px-3 items-center rounded-full justify-center">
+                                <span class="inline-flex w-2 h-2 rounded-full bg-[#22C8FF] mx-1"></span>
+                                <p class="text-[10px] lg:text-[15px]">What I Do?</p>
+                            </div>
+                            <p class="text-[10px] lg:text-[15px]">
+                                I specialize in designing web interfaces, CMS dashboards, and landing pages with a focus
+                                on usability and visual consistency.
+                            </p>
+
+                            <div class="bg-white/20 w-fit h-auto flex flex-row px-3 items-center rounded-full justify-center mt-3">
+                                <span class="inline-flex w-2 h-2 rounded-full bg-[#22C8FF] mx-1"></span>
+                                <p class="text-[10px] lg:text-[15px]">Personal Touch</p>
+                            </div>
+                            <p class="text-[10px] lg:text-[15px]">
+                                I continuously learn and explore new design trends to improve my skills and create
+                                better user experiences.
+                            </p>
+
+                            <div class="bg-white/20 w-fit h-auto flex flex-row px-3 items-center rounded-full justify-center mt-3">
+                                <span class="inline-flex w-2 h-2 rounded-full bg-[#22C8FF] mx-1"></span>
+                                <p class="text-[10px] lg:text-[15px]">Skill</p>
+                            </div>
+                            <p class="text-[10px] lg:text-[15px]">UI Design (Figma)</p>
+                            <p class="text-[10px] lg:text-[15px]">Wireframing & Prototyping</p>
+                            <p class="text-[10px] lg:text-[15px]">Design System</p>
+                            <p class="text-[10px] lg:text-[15px]">User Flow</p>
+                        </div>
+
+                        <div class="w-full sm:w-1/2 h-full flex items-center justify-center ">
+                            <div class="relative rounded-[30px] border border-white/10 bg-white/10 backdrop-blur-2xl p-8 max-w-87.5">
+
+                                <img src="./src/img/Lv2.png"
+                                    class="w-24 mx-auto mb-6">
+
+                                <p class="text-center text-[#22C8FF] text-sm font-semibold tracking-[0.3em] uppercase">
+                                    Logo Identity
+                                </p>
+
+                                <p class="text-white/60 text-xs sm:text-sm leading-relaxed mt-4 text-center">
+                                    This logo combines the letter <span class="text-white font-semibold">“L”</span>
+                                    with a sword element, symbolizing sharp thinking, decisiveness,
+                                    and the ability to simplify complexity into effective design.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section id="projectSection" class="section flex justify-center">
+                    <div class="w-full flex flex-col items-center">
+                        <div class="w-full justify-center flex flex-col items-center">
+                            <p class="text-[18px] font-bold">Project</p>
+                            <p class="text-[13px]">UI/UX Designer | Web & Mobile Project</p>
+                        </div>
+
+                        <!-- SLIDER -->
+                        <div class="relative w-full flex items-center justify-center mt-5 h-full">
+                            <!-- Left Button -->
+                            <button
+                                id="prevProject"
+                                class="z-30 absolute left-0 sm:left-[12%]
+                                w-10 h-10 rounded-full
+                                bg-[#22C8FF]
+                                text-3xl font-bold
+                                backdrop-blur-xl
+                                hover:scale-110
+                                transition-all duration-300 justify-center flex items-center">
+                                <img src="./src/img/arrow.png" class="w-8 -scale-x-100" alt="Previous project">
+                            </button>
+
+                            <!-- Right Button -->
+                            <button
+                                id="nextProject"
+                                class="z-30 absolute right-0 sm:right-[12%] 
+                                w-10 h-10 rounded-full
+                                bg-[#22C8FF]
+                                text-3xl font-bold
+                                backdrop-blur-xl
+                                hover:scale-110
+                                transition-all duration-300 justify-center flex items-center">
+                                <img src="./src/img/arrow.png" class="w-8" alt="Next project">
+                            </button>
+
+                            <!-- Cards Wrapper -->
+                            <div
+                                id="projectCarousel"
+                                class="relative w-full max-w-350 h-110 mx-auto flex items-center justify-center overflow-visible"
+                            >
+
+                                <!-- Card 1 -->
+                                <a href="#" class="project-card active-card">
+                                    <img src="./src/img/Migrasi.jpeg" alt="Project 1" class="project-image">
+
+                                    <div class="project-overlay">
+                                        <p class="text-2xl font-bold">Project 1</p>
+                                        <p class="text-white/70">Web Design Interface</p>
+                                    </div>
+                                </a>
+
+                                <!-- Card 2 -->
+                                <a href="#" class="project-card right-card">
+                                    <img src="./src/img/project1.png" alt="Project 2" class="project-image">
+
+                                    <div class="project-overlay">
+                                        <p class="text-2xl font-bold">Project 2</p>
+                                        <p class="text-white/60 text-sm">Dashboard CMS</p>
+                                    </div>
+                                </a>
+
+                                <!-- Card 3 -->
+                                <a href="#" class="project-card left-card">
+                                    <img src="./src/img/project1.png" alt="Project 3" class="project-image">
+
+                                    <div class="project-overlay">
+                                        <p class="text-2xl font-bold">Project 3</p>
+                                        <p class="text-white/60 text-sm">Mobile App</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Indicator -->
+                        <div id="projectDots" class="flex gap-3 mt-8 w-full justify-center">
+                            <span class="slider-dot active-slider-dot"></span>
+                            <span class="slider-dot"></span>
+                            <span class="slider-dot"></span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXPERIENCE SECTION -->
+                <section id="experienceSection" class="section active flex flex-col items-center justify-center">
+                    <h2 class="text-sm sm:text-lg font-black mb-3">
+                                Work <span class="text-[#22C8FF]">Experience</span></h2>
+                    <div class="w-full h-full px-[clamp(1.5rem,5vw,4rem)] flex flex-col sm:flex-row gap-4 items-center">
+
+                        <!-- CENTER FEATURE CARD -->
+                        <!-- <div class="relative flex sm:h-[90%] sm:w-1/2 md:w-1/3 rounded-xl border border-[#22C8FF]/30 bg-black/50 backdrop-blur-3xl p-5 shadow-[0_0_30px_rgba(34,200,255,0.12)] transition-all duration-500 mt-5 sm:mt-0">
+                            <div class="absolute inset-0 bg-linear-to-br from-[#22C8FF]/20 via-transparent to-[#2E7EFF]/20 rounded-xl"></div>
+
+                            <div class="w-full h-full flex flex-col relative z-10">
+                                
+                                <h3 class="text-[15px] font-bold mt-3 leading-tight">
+                                    Experience
+                                </h3>
+
+                                <p class="text-[#22C8FF] text-[10px] font-semibold">
+                                    PT. Mitra Graha Integrasi
+                                </p>
+
+                                <p class="text-white mt-2 text-[10px]">
+                                    2025 - 2026
+                                </p>
+
+                                <p class="text-white/60 mt-2 text-[10px]">
+                                    Designed clean and functional user interfaces for web and CMS platforms, created interactive prototypes, and improve
+                                    product usability and visual consistency.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-2">
+                                    <span class="text-[10px] w-auto h-7 flex items-center justify-center rounded-full border bg-[#20C8FFFF]/8 border-[#20C8FFFF]/18"><p class="mx-2">Figma</p></span>
+                                    <span class="text-[10px] w-auto h-7 flex items-center justify-center rounded-full border bg-[#20C8FFFF]/8 border-[#20C8FFFF]/18"><p class="mx-2">UI/UX Design</p></span>
+                                    <span class="text-[10px] w-auto h-7 flex items-center justify-center rounded-full border bg-[#20C8FFFF]/8 border-[#20C8FFFF]/18"><p class="mx-2">Prototype</p></span>
+                                </div>
+                                
+                            </div>
+                        </div> -->
+
+                        <div class="relative flex sm:h-[90%] sm:w-1/2 md:w-1/3 rounded-xl border border-[#22C8FF]/30 bg-black/50 backdrop-blur-3xl p-5 md:p-10 shadow-[0_0_30px_rgba(34,200,255,0.12)]">
+
+                            <div class="absolute inset-0 bg-linear-to-br from-[#22C8FF]/20 via-transparent to-[#2E7EFF]/20 rounded-xl"></div>
+
+                            <div class="relative z-10 flex flex-col h-full justify-center">
+
+                                <div>
+                                    <p class="text-[#22C8FF] sm:text-md text-sm font-semibold tracking-[0.3em] uppercase">
+                                        Career Journey
+                                    </p>
+
+                                    <h2 class="text-xl sm:text-3xl font-black mt-3 leading-tight">
+                                        Designing
+                                        <br>
+                                        Digital
+                                        <br>
+                                        Experiences
+                                    </h2>
+
+                                    <p class="text-white/60 text-xs sm:text-sm sm:mt-5 mt-2 leading-relaxed">
+                                        Over the years, I have worked across UI/UX Design,
+                                        Graphic Design, and Frontend Development,
+                                        helping transform ideas into intuitive digital experiences.
+                                    </p>
+                                </div>
+
+                                <div class="md:space-y-2 mt-3 sm:mt-5">
+
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-2 h-2 rounded-full bg-[#22C8FF]"></span>
+                                        <p class="text-xs sm:text-sm">
+                                            UI/UX Design
+                                        </p>
+                                    </div>
+
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-2 h-2 rounded-full bg-[#22C8FF]"></span>
+                                        <p class="text-xs sm:text-sm">
+                                            Frontend Development
+                                        </p>
+                                    </div>
+
+                                    <div class="flex items-center gap-3">
+                                        <span class="w-2 h-2 rounded-full bg-[#22C8FF]"></span>
+                                        <p class="text-xs sm:text-sm">
+                                            Graphic Design
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                                <!-- <div class="flex gap-5 mt-8">
+
+                                    <div>
+                                        <p class="text-3xl font-black">
+                                            3+
+                                        </p>
+
+                                        <p class="text-xs text-white/50">
+                                            Years Learning
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <p class="text-3xl font-black">
+                                            10+
+                                        </p>
+
+                                        <p class="text-xs text-white/50">
+                                            Projects
+                                        </p>
+                                    </div>
+
+                                </div> -->
+
+                            </div>
+
+                        </div>
+
+                        <div class="group relative w-full rounded-xl h-15 bg-[url('/src/img/Migrasi.jpeg')] bg-cover bg-center overflow-hidden transition-all duration-700 sm:h-[90%] sm:w-20 md:w-40 sm:hover:w-[40%] hover:h-50 sm:hover:h-[90%] shadow-[0_0_30px_rgba(34,200,255,0.12)]">
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 backdrop-blur-[2px] bg-neutral-900/90 group-hover:bg-neutral-900/35 transition-all duration-700 rounded-xl border-2 border-[#22C8FF]"></div>
+                            <!-- Cyan Glow -->
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 backdrop-blur-[1px] bg-neutral-900/80 bg-linear-to-br from-[#22C8FF]/25 via-transparent to-[#2E7EFF]/25 transition-all duration-700 rounded-xl"></div>
+                            <!-- COLLAPSED CONTENT -->
+                            <div class="absolute inset-0 z-10 flex items-center sm:flex-col sm:justify-end p-2 sm:p-3 transition-all duration-500 group-hover:opacity-0 group-hover:scale-95 group-hover:blur-sm">
+                                <!-- Icon -->
+                                <div class="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#20C8FF]/20 border border-[#20C8FF]/30 backdrop-blur-md shrink-0 sm:mb-4 order-1 sm:order-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <path fill="#ffffff" d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z" />
+                                    </svg>
+                                </div>
+                                <!-- Company -->
+                                <p class="ml-3 sm:ml-0 sm:[writing-mode:vertical-rl] sm:rotate-180 text-sm sm:text-[15px] font-bold whitespace-nowrap order-2 sm:order-1 sm:h-full flex sm:justify-center">
+                                    PT. MITRA GRAHA INTEGRASI
+                                </p>
+                            </div>
+                        
+                            <!-- HOVER CONTENT -->
+                            <div class="absolute inset-0 z-20 flex flex-col justify-end p-2 opacity-0 translate-y-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 ml-2 sm:mb-5">
+                                <!-- New Icon -->
+                                <div class="w-11 h-11 rounded-xl bg-[#22C8FF]/25 border border-[#22C8FF]/40 backdrop-blur-md flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(34,200,255,.25)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <path fill="#ffffff" d="M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z" />
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl sm:text-3xl font-black leading-tight">
+                                    UI/UX Designer
+                                </p>
+
+                                <p class="text-[#22C8FF] text-xs sm:text-lg font-semibold mt-1">
+                                    PT. Mitra Graha Integrasi | 2025 - 2026
+                                </p>
+
+                                <p class="text-white/75 text-[11px] sm:text-sm mt-3 leading-relaxed max-w-80">
+                                    Designed clean and functional user interfaces for web and CMS platforms.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Figma
+                                    </span>
+
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        UI/UX
+                                    </span>
+
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Prototype
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group relative w-full rounded-xl h-15 bg-[url('/src/img/Migrasi.jpeg')] bg-cover bg-center overflow-hidden transition-all duration-700 sm:h-[90%] sm:w-20 md:w-40 sm:hover:w-[40%] hover:h-50 sm:hover:h-[90%] shadow-[0_0_30px_rgba(34,200,255,0.12)]">
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 backdrop-blur-[2px] bg-neutral-900/90 group-hover:bg-neutral-900/35 transition-all duration-700 rounded-xl border-2 border-[#22C8FF]"></div>
+                            <!-- Cyan Glow -->
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 backdrop-blur-[1px] bg-neutral-900/80 bg-linear-to-br from-[#22C8FF]/25 via-transparent to-[#2E7EFF]/25 transition-all duration-700 rounded-xl"></div>
+                            <!-- COLLAPSED CONTENT -->
+                            <div class="absolute inset-0 z-10 flex items-center sm:flex-col sm:justify-end p-2 sm:p-3 transition-all duration-500 group-hover:opacity-0 group-hover:scale-95 group-hover:blur-sm">
+                                <!-- Icon -->
+                                <div class="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#20C8FF]/20 border border-[#20C8FF]/30 backdrop-blur-md shrink-0 sm:mb-4 order-1 sm:order-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <path fill="#fff" d="M3 17.25V21h3.75L17.81 9.93l-3.75-3.75zm19.61 1.11l-4.25 4.25l-5.2-5.2l1.77-1.77l1 1l2.47-2.48l1.42 1.42L18.36 17l1.06 1l1.42-1.4zm-16-7.53L1.39 5.64l4.25-4.25L7.4 3.16L4.93 5.64L6 6.7l2.46-2.48l1.42 1.42l-1.42 1.41l1 1zM20.71 7c.39-.39.39-1 0-1.41l-2.34-2.3c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75z" />
+                                    </svg>
+                                </div>
+                                <!-- Company -->
+                                <p class="ml-3 sm:ml-0 sm:[writing-mode:vertical-rl] sm:rotate-180 text-sm sm:text-[15px] font-bold whitespace-nowrap order-2 sm:order-1 sm:h-full flex sm:justify-center">
+                                    Adreena Village
+                                </p>
+                            </div>
+                        
+                            <!-- HOVER CONTENT -->
+                            <div class="absolute inset-0 z-20 flex flex-col justify-end p-2 opacity-0 translate-y-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 ml-2 sm:mb-5">
+                                <!-- New Icon -->
+                                <div class="w-11 h-11 rounded-xl bg-[#22C8FF]/25 border border-[#22C8FF]/40 backdrop-blur-md flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(34,200,255,.25)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24">
+                                    <path d="M0 0h24v24H0z" fill="none" />
+                                    <path fill="#fff" d="M3 17.25V21h3.75L17.81 9.93l-3.75-3.75zm19.61 1.11l-4.25 4.25l-5.2-5.2l1.77-1.77l1 1l2.47-2.48l1.42 1.42L18.36 17l1.06 1l1.42-1.4zm-16-7.53L1.39 5.64l4.25-4.25L7.4 3.16L4.93 5.64L6 6.7l2.46-2.48l1.42 1.42l-1.42 1.41l1 1zM20.71 7c.39-.39.39-1 0-1.41l-2.34-2.3c-.37-.39-1.02-.39-1.41 0l-1.84 1.83l3.75 3.75z" />
+                                </svg>
+
+                                </div>
+
+                                <p class="text-xl sm:text-3xl font-black leading-tight">
+                                    Graphic Design
+                                </p>
+
+                                <p class="text-[#22C8FF] text-xs sm:text-lg font-semibold mt-1">
+                                    PT. Gemilang Duabelas Porsindo | 2025
+                                </p>
+
+                                <p class="text-white/75 text-[11px] sm:text-sm mt-3 leading-relaxed max-w-80">
+                                    Designed clean and functional user interfaces for web and CMS platforms.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Figma
+                                    </span>
+
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Graphic Design
+                                    </span>
+
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Prototype
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="group relative w-full rounded-xl h-15 bg-[url('/src/img/Migrasi.jpeg')] bg-cover bg-center overflow-hidden transition-all duration-700 sm:h-[90%] sm:w-20 md:w-40 sm:hover:w-[40%] hover:h-50 sm:hover:h-[90%] shadow-[0_0_30px_rgba(34,200,255,0.12)]">
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 backdrop-blur-[2px] bg-neutral-900/90 group-hover:bg-neutral-900/35 transition-all duration-700 rounded-xl border-2 border-[#22C8FF]"></div>
+                            <!-- Cyan Glow -->
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 backdrop-blur-[1px] bg-neutral-900/80 bg-linear-to-br from-[#22C8FF]/25 via-transparent to-[#2E7EFF]/25 transition-all duration-700 rounded-xl"></div>
+                            <!-- COLLAPSED CONTENT -->
+                            <div class="absolute inset-0 z-10 flex items-center sm:flex-col sm:justify-end p-2 sm:p-3 transition-all duration-500 group-hover:opacity-0 group-hover:scale-95 group-hover:blur-sm">
+                                <!-- Icon -->
+                                <div class="flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#20C8FF]/20 border border-[#20C8FF]/30 backdrop-blur-md shrink-0 sm:mb-4 order-1 sm:order-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <g fill="none">
+                                            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                            <path fill="#fff" d="M19 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 8H5v6h14zm0-6H5v4h14zM7 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <!-- Company -->
+                                <p class="ml-3 sm:ml-0 sm:[writing-mode:vertical-rl] sm:rotate-180 text-sm sm:text-[15px] font-bold whitespace-nowrap order-2 sm:order-1 sm:h-full flex sm:justify-center">
+                                    PT. Kiano Karya Cemerlang
+                                </p>
+                            </div>
+                        
+                            <!-- HOVER CONTENT -->
+                            <div class="absolute inset-0 z-20 flex flex-col justify-end p-2 opacity-0 translate-y-6 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 group-hover:scale-100 ml-2 sm:mb-5">
+                                <!-- New Icon -->
+                                <div class="w-11 h-11 rounded-xl bg-[#22C8FF]/25 border border-[#22C8FF]/40 backdrop-blur-md flex items-center justify-center mb-4 shadow-[0_0_20px_rgba(34,200,255,.25)]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="w-7" viewBox="0 0 24 24">
+                                        <path d="M0 0h24v24H0z" fill="none" />
+                                        <g fill="none">
+                                            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
+                                            <path fill="#fff" d="M19 4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 8H5v6h14zm0-6H5v4h14zM7 7a1 1 0 1 1 0 2a1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2m3 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2" />
+                                        </g>
+                                    </svg>
+                                </div>
+
+                                <p class="text-xl sm:text-3xl font-black leading-tight">
+                                    Frontend Web Development
+                                </p>
+
+                                <p class="text-[#22C8FF] text-xs sm:text-lg font-semibold mt-1">
+                                    PT. Kiano Karya Cemerlang | 2024 - 2025
+                                </p>
+
+                                <p class="text-white/75 text-[11px] sm:text-sm mt-3 leading-relaxed max-w-80">
+                                    Designed clean and functional user interfaces for web and CMS platforms.
+                                </p>
+
+                                <div class="flex flex-wrap gap-2 mt-4">
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Figma
+                                    </span>
+
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Graphic Design
+                                    </span>
+
+                                    <span class="text-[10px] sm:text-sm px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 backdrop-blur-sm">
+                                        Prototype
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>                   
+
+                </section>
+
+                <section id="contactSection" class="section">
+                    <div class="w-full h-full px-[clamp(1.5rem,5vw,4rem)] flex flex-col sm:flex-row items-center justify-center gap-6">
+
+                        <!-- LEFT -->
+                        <div class="w-full sm:w-1/2">
+                            <p class="text-sm text-white/50 mb-2">CONTACT</p>
+
+                            <h2 class="text-4xl lg:text-6xl font-black leading-none">
+                                Let's Build
+                                <span class="text-[#22C8FF]">Something</span>
+                                Together
+                            </h2>
+
+                            <p class="text-white/60 text-sm lg:text-base mt-6 max-w-md">
+                                Open for collaboration, internship opportunities, UI/UX projects,
+                                and frontend interface development.
+                            </p>
+
+                            <div class="animated-line w-full max-w-md h-0.5 mt-6 rounded-full"></div>
+                        </div>
+
+                        <!-- RIGHT PANEL -->
+                        <div class="w-full sm:w-1/2 flex flex-col gap-4">
+
+                            <a href="mailto:lutfhijr56@gmail.com" class="contact-card">
+                                <div>
+                                    <p class="text-white/40 text-xs">EMAIL</p>
+                                    <p class="font-bold text-lg">lutfhijr56@gmail.com</p>
+                                </div>
+                                <span>↗</span>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/lutfhi-jaya-rizaldi" target="_blank" class="contact-card">
+                                <div>
+                                    <p class="text-white/40 text-xs">LINKEDIN</p>
+                                    <p class="font-bold text-lg">Lutfhi Jaya Rizaldi</p>
+                                </div>
+                                <span>↗</span>
+                            </a>
+
+                            <a href="https://www.instagram.com/lutfhijayar/" target="_blank" class="contact-card">
+                                <div>
+                                    <p class="text-white/40 text-xs">INSTAGRAM</p>
+                                    <p class="font-bold text-lg">@lutfhijayar</p>
+                                </div>
+                                <span>↗</span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <div class="mt-auto w-full">
+                <div class="flex flex-row items-center justify-center h-full w-full">
+                    <div class="w-full px-6 lg:px-16 flex mb-5">
+                        <img src="./src/img/linked.png" alt="LinkedIn" class="w-5 lg:w-10 sm:w-7">
+                        <img src="./src/img/insta.png" alt="Instagram" class="w-5 mx-2 lg:w-10 sm:w-7">
+                    </div>
+
+                    <button id="exploreBtn" class="cursor-pointer w-full px-6 lg:px-16 justify-center flex">
+                        <div class="relative flex items-center justify-center mb-5">
+                            <span class="absolute inline-flex h-3 w-3 rounded-full bg-white opacity-75 animate-ping"></span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                        </div>
+
+                        <p class="text-[10px] sm:text-sm font-light tracking-wide mx-3 mb-5">
+                            Tap To Explore
+                        </p>
+                    </button>
+
+                    <div class="w-full px-6 lg:px-16 flex justify-end mb-5 text-sm md:text-md lg:text-lg">
+                        Contact
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>
