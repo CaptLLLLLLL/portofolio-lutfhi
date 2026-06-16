@@ -5,6 +5,7 @@ const exploreBtn = document.getElementById("exploreBtn");
 const cards = document.querySelectorAll(".project-card");
 const nextBtn = document.getElementById("nextProject");
 const prevBtn = document.getElementById("prevProject");
+const mainFooter = document.getElementById("mainFooter");
 
 const sectionList = [
     "heroSection",
@@ -44,6 +45,14 @@ function switchSection(targetId, direction = "in") {
 
     if (activeDot) {
         activeDot.classList.add("active-dot");
+    }
+
+    if (mainFooter) {
+        if (targetId === "projectDetailSection") {
+            mainFooter.classList.add("opacity-0", "pointer-events-none", "translate-y-10");
+        } else {
+            mainFooter.classList.remove("opacity-0", "pointer-events-none", "translate-y-10");
+        }
     }
 
     currentSection = sectionList.indexOf(targetId);
@@ -271,11 +280,92 @@ function updateExperience(index) {
     expItems[index].classList.add("active-exp");
 }
 
-expItems.forEach(item => {
-    item.addEventListener("click", () => {
-        const index = item.dataset.exp;
-        updateExperience(index);
+if (
+    expItems.length &&
+    expRole &&
+    expCompany &&
+    expDesc &&
+    expImpactList &&
+    expTagList
+) {
+    expItems.forEach(item => {
+        item.addEventListener("click", () => {
+            const index = item.dataset.exp;
+            updateExperience(index);
+        });
+    });
+
+    updateExperience(0);
+}
+
+// Project Detail Section
+const projectData = [
+    {
+        title: "MIGRASI Company Profile",
+        category: "UI/UX Design | Web & CMS",
+        image: "./src/img/Migrasi.jpeg",
+        desc: "Designed a company profile website and CMS interface for PT. Mitra Graha Integrasi, focusing on clean layout, content structure, usability, and visual consistency across public and admin pages.",
+        tools: ["Figma", "UI Design", "CMS", "Prototype"],
+        link: "#"
+    },
+    {
+        title: "Project 2",
+        category: "Dashboard CMS",
+        image: "./src/img/project1.png",
+        desc: "Designed a dashboard interface with a focus on information hierarchy, content management flow, and efficient user interaction.",
+        tools: ["Figma", "Dashboard", "UX Flow"],
+        link: "#"
+    },
+    {
+        title: "Project 3",
+        category: "Mobile App",
+        image: "./src/img/project1.png",
+        desc: "Created a mobile application interface with clean visuals, simple navigation, and user-friendly interaction flow.",
+        tools: ["Figma", "Mobile UI", "Prototype"],
+        link: "#"
+    }
+];
+
+const detailImage = document.getElementById("detailImage");
+const detailTitle = document.getElementById("detailTitle");
+const detailCategory = document.getElementById("detailCategory");
+const detailDesc = document.getElementById("detailDesc");
+const detailTools = document.getElementById("detailTools");
+const detailLink = document.getElementById("detailLink");
+const backToProjects = document.getElementById("backToProjects");
+
+function openProjectDetail(index) {
+    const project = projectData[index];
+
+    detailImage.src = project.image;
+    detailTitle.textContent = project.title;
+    detailCategory.textContent = project.category;
+    detailDesc.textContent = project.desc;
+    detailLink.href = project.link;
+
+    detailTools.innerHTML = project.tools.map(tool => `
+        <span class="px-3 py-1 rounded-full border bg-[#20C8FF]/10 border-[#20C8FF]/30 text-xs sm:text-sm">
+            ${tool}
+        </span>
+    `).join("");
+
+    mainFooter.classList.add(
+        "opacity-0",
+        "pointer-events-none",
+        "translate-y-10"
+    );
+
+    switchSection("projectDetailSection", "in");
+}
+
+document.querySelectorAll(".project-card").forEach((card) => {
+    card.addEventListener("click", (e) => {
+        e.preventDefault();
+        const index = Number(card.dataset.project);
+        openProjectDetail(index);
     });
 });
 
-updateExperience(0);
+backToProjects.addEventListener("click", () => {
+    switchSection("projectSection", "out");
+});
