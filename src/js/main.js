@@ -303,26 +303,26 @@ const projectData = [
     {
         title: "MIGRASI Company Profile",
         category: "UI/UX Design | Web & CMS",
-        image: "./src/img/Migrasi.jpeg",
+        image: "./src/img/cmigrasi.png",
         desc: "Designed a company profile website and CMS interface for PT. Mitra Graha Integrasi, focusing on clean layout, content structure, usability, and visual consistency across public and admin pages.",
         tools: ["Figma", "UI Design", "CMS", "Prototype"],
-        link: "#"
+        link: "https://www.figma.com/design/vcyuLu5A7raf7OocOCShDC/Website-MIGRASI?t=vuGgatn6XQ3VPhsJ-1"
     },
     {
-        title: "Project 2",
-        category: "Dashboard CMS",
-        image: "./src/img/project1.png",
-        desc: "Designed a dashboard interface with a focus on information hierarchy, content management flow, and efficient user interaction.",
-        tools: ["Figma", "Dashboard", "UX Flow"],
-        link: "#"
+        title: "Revamp UI ReflectQ",
+        category: "Mobile UI Design",
+        image: "./src/img/cref.png",
+        desc: "Designed a mobile user interface with a focus on usability, visual appeal, and seamless user experience.",
+        tools: ["Figma", "Mobile UI", "UX Flow"],
+        link: "https://www.figma.com/design/dL2JwpYTyNPoFe93poqYeU/Revamp-UI-UX-Aplikasi-RefletQ?node-id=0-1&t=mfxN1FRGsrqtlZ06-1"
     },
     {
-        title: "Project 3",
+        title: "Mobile UI/UX Design Maseer",
         category: "Mobile App",
-        image: "./src/img/project1.png",
-        desc: "Created a mobile application interface with clean visuals, simple navigation, and user-friendly interaction flow.",
-        tools: ["Figma", "Mobile UI", "Prototype"],
-        link: "#"
+        image: "./src/img/cmas.png",
+        desc: "Designed a mobile UI/UX concept for a Hajj navigation app, helping pilgrims find the nearest entrance gate to Masjid Al-Haram through intuitive route recommendations and a user-friendly interface.",
+        tools: ["Figma", "Mobile UI", "Prototype", "Consultation"],
+        link: "https://www.figma.com/design/587NxhzjieRaPz4FHSd0XR/Mobile-UI-UX-Design-Maseer?node-id=0-1&t=mfxN1FRGsrqtlZ06-1"
     }
 ];
 

@@ -223,7 +223,7 @@ body {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 40px;
+    border-radius: 20px;
     backdrop-filter: blur(20px);
     transition:
         transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
@@ -487,4 +487,9 @@ body {
     .about-stat p{
         font-size:28px;
     }
+}
+
+#backToProjects:hover{
+    transform:translateX(-6px);
+    box-shadow:0 0 10px rgba(34,200,255,.2);
 }
